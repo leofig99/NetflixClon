@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+  body{
+    background-color: #141414;
+    font-family: Arial, Helvetica, sans-serif;
+
+  color:white;
+  }
+header {
+  position: fixed;
+  display: flex;  
+  height: 10%;
+  width: 100%;
+  z-index: 1;
+}
+#netflixlogo{
+  width: 6vw;
+}
+.navizquierda{
+  display: flex;
+  width: 100%;
+}
+.navizquierda a{
+  text-decoration: none;
+  margin: 1vw;  
+  font-size: 1vw;
+  color:white;
+}
+
+.navderecha{
+    display: flex;
+    justify-content: flex-end;
+}
+.navderecha a{
+  text-decoration: none;
+  margin: 1vw;  
+  font-size: 1vw;
+  color:white;
+}
+.contenido{
+  position:absolute;
+  width: 100%;
+  z-index: -1;
+}
+.principal{
+  padding-top: 15%;
+  padding-left: 5%  ;
+  width: 50%;
+}
+.principal h1{
+  font-size:5vw;
+}
+.principal p{
+  font-size:1.8vw;
+}
+.principal button{
+  font-size: 1vw;
+  border-radius: 10px;
+  width: 20%;
+  height: 3em;
+}
+.imagenes{
+  display:flex;
+  justify-content: space-around;
+
+}
+.imagenes img{
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+h2{
+  font-size: 1.5vw;
+  padding-top: 5%;
+}
+.items{
+  position:relative;
+}
+.footer {
+  padding: 10vw;
+  padding-right: 20vw;
+  padding-left: 20vw;
+}
+
+.enlaces ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-gap: 1vw;
+  grid-template-columns: repeat(4, 1fr);
+  
+}
+
+.enlaces a {
+  color: darkgrey;
+  text-decoration: none;
+  font-size: 1vw;
+}
+
+.redessociales a{
+  padding: 1vw;
+  font-size: 1vw;
+}
+
+.coloricono {
+  color: darkgrey;
+}
+.items a:hover {
+  transform: scale(1.2);
+}
+
+    </style>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Netflix clon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+  <body>
+    <div>
+      <header> 
+        <nav class="navizquierda">
+          <a href=""><img id="netflixlogo" src="./imagenes/logonetflix.png"></a>                
+          <a href="">Inicio</a>
+          <a href="">Series</a>
+          <a href="">Peliculas</a>
+          <a href="">Novdedades populares</a>
+          <a href="">Mi lista</a>
+        </nav>
+        <nav class="navderecha">
+          <a href="#"><i class="fa fa-search"></i></a>
+          <a href="#"><i class="fa fa-bell"></i></a>
+          <a href="#"><img src="./imagenes/perfil.jpg" height="20vw"></img></a>        
+        </nav>      
+      </header>
+    </div>
+    <div class="contenido">
+      <img src="./imagenes/parasite.png" width="100%"></img>
+
+  </div>
+  <div class="items">
+    <div class="principal">
+      <h1>PARASITE</h1>
+      <p>Uno a uno, los astutos miembros de una familia sin recursos comienzan a desempeñarse como personal doméstico en la casa de una adinerada y privilegiada pareja.</p>
+      <button >▶ Reproducir</button>
+      <button style="background-color:grey; color:white">ℹ️ Más información</button>
+    </div> 
+    <div style="padding-top:4%">
+      <h2>Popular en Netflix</h2>
+        <div class="imagenes">
+            <a href="#"><img src="./imagenes/pelicula1.jpg"></img></a>
+            <a href=""><img src="./imagenes/pelicula2.png"></img></a>
+            <a href=""><img src="./imagenes/pelicula3.png"></img></a>
+            <a href=""><img src="./imagenes/pelicula4.jpg"></img></a>
+            <a href=""><img src="./imagenes/pelicula5.png"></img></a>
+        </div>
+    </div>
+    <div>
+      <h2>Mi Lista</h2>
+        <div class="imagenes">
+            <a href=""><img src="./imagenes/pelicula4.jpg"></img></a>
+            <a href=""><img src="./imagenes/pelicula3.png"></img></a>
+            <a href=""><img src="./imagenes/pelicula5.png"></img></a>
+            <a href=""><img src="./imagenes/pelicula1.jpg"></img></a>
+            <a href=""><img src="./imagenes/pelicula2.png"></img></a>
+        </div>
+    </div>
+    <div>
+      <h2>Tendencias</h2>
+        <div class="imagenes">
+          <a href=""><img src="./imagenes/pelicula2.png"></img></a>
+            <a href=""><img src="./imagenes/pelicula4.jpg"></img></a>
+            <a href=""><img src="./imagenes/pelicula1.jpg"></img></a>
+            <a href=""><img src="./imagenes/pelicula5.png"></img></a>
+            <a href=""><img src="./imagenes/pelicula3.png"></img></a>
+        </div>
+    </div>
+    <div>
+      <h2>Continuar viendo contenido de Leo</h2>
+        <div class="imagenes">
+          <a href=""><img src="./imagenes/pelicula5.png"></img></a>
+          <a href=""><img src="./imagenes/pelicula1.jpg"></img></a>
+          <a href=""><img src="./imagenes/pelicula3.png"></img></a>
+          <a href=""><img src="./imagenes/pelicula2.png"></img></a>
+          <a href=""><img src="./imagenes/pelicula4.jpg"></img></a>
+        </div>
+    </div>
+  </div>
+
+  <section class="footer">
+    <div class="redessociales">
+      <a href="#"><i class="fa fa-facebook-square fa-2x coloricono"></i></a>
+      <a href="#"><i class="fa fa-instagram fa-2x coloricono"></i></a>
+      <a href="#"><i class="fa fa-twitter fa-2x coloricono"></i></a>
+      <a href="#"><i class="fa fa-youtube fa-2x coloricono"></i></a>
+    </div>
+    <div class="enlaces">
+      <ul>
+        <li><a href="#">Audio y subtitulos</a></li>
+        <li><a href="#">Audio descriptivo</a></li>
+        <li><a href="#">Centro de ayuda</a></li>
+        <li><a href="#">Tarjetas de regalo</a></li>
+        <li><a href="#">Prensa</a></li>
+        <li><a href="#">Relaciones con inversionistas</a></li>
+        <li><a href="#">Empleo</a></li>
+        <li><a href="#">Términos de uso</a></li>
+        <li><a href="#">Privacidad</a></li>
+        <li><a href="#">Avisos legales</a></li>
+        <li><a href="#">Preferencias de cookies</a></li>
+        <li><a href="#">Información corporativa</a></li>
+        <li><a href="#">Contactanos</a></li>
+      </ul>
+    </div>
+  </section>
+  </body>
+</html>
